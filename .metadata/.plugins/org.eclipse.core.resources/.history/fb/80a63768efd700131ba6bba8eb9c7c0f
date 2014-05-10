@@ -7,10 +7,6 @@ import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
-/*
- * The code in this file comes directly from Example 2-5
- * in Hadoop The Definitive Guide by Tom White
- */
 public class MaxHeat {
 	
 	public static void main(String args[]) throws Exception {
