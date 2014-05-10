@@ -34,7 +34,7 @@ public class MaxHeatMapper extends Mapper<LongWritable, Text, Text, IntWritable>
 		String line = value.toString();
 		List<String> items = Arrays.asList(line.split(","));
 		
-		String year = items.get(1).substring(0, 4);
+		String year = items.get(1);
 		
 		try {
 			int heat = Integer.parseInt(items.get(14));
