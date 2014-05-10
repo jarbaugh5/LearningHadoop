@@ -1,0 +1,24 @@
+package FirstJob;
+
+
+public class MaxHeat extends Mapper(LongWritable, Text, Text, IntWritable) {
+	
+//	public static void main(String[] args) {
+//		BufferedReader br = null;
+//		
+//		
+//		try {
+//			String line;
+//			br = new BufferedReader(new FileReader(new File("data/201404daily.txt")));
+//			while ((line = br.readLine()) != null) {
+//				List<String> items = Arrays.asList(line.split(","));
+//				// heat is 15th element
+//				System.out.println(items.get(14));
+//			}
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}
+//	}
+	
+	
+}

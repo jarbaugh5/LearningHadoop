@@ -1,0 +1,12 @@
+package FirstJob;
+
+import java.io.File;
+
+public class MaxHeat {
+	
+	public static void main(String[] args) {
+		File test = new File("dailysnippet.txt");
+		
+	}
+
+}

@@ -1,0 +1,19 @@
+package FirstJob;
+
+import org.apache.hadoop.io.IntWritable;
+import org.apache.hadoop.io.LongWritable;
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.Mapper;
+
+/*
+ * This is an adaptation of the first example on
+ * page 22 of Hadoop The Definitive Guide by Tom White
+ * 
+ * I have a slightly different data file so
+ * the map function is a bit different.
+ * 
+ * 
+ */
+public class MaxHeat extends Mapper<LongWritable, Text, Text, IntWritable> {
+	
+}

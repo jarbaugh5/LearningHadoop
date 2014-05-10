@@ -1,0 +1,22 @@
+package FirstJob;
+
+import org.apache.hadoop.mapreduce.Job;
+import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
+
+public class MaxHeat {
+	
+	public static void main(String args[]) throws Exception {
+		if (args.length != 2) {
+			System.err.println("Usage: MaxHeat <input path> <output path>");
+			System.exit(-1);
+		}
+		
+		Job job = new Job();
+		job.setJarByClass(MaxHeat.class);
+		job.setJobName("Max Heat");
+		
+		FileInputFormat.addInputPath(job, new Path(args[0]));
+		
+	}
+
+}

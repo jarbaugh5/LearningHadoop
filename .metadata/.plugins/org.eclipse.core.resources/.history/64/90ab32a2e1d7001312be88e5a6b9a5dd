@@ -1,0 +1,9 @@
+package FirstJob;
+
+public class MaxHeat {
+	
+	public static void main(String[] args) {
+		System.out.println("Hello World!");
+	}
+
+}

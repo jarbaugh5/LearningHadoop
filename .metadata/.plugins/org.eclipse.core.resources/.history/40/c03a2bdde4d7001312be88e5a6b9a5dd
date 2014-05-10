@@ -1,0 +1,29 @@
+package FirstJob;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class MaxHeat {
+	
+	public static void main(String[] args) {
+		BufferedReader br = null;
+		
+		
+		try {
+			String line;
+			br = new BufferedReader(new FileReader(new File("src/FirstJob/dailysnippet.txt")));
+			while ((line = br.readLine()) != null) {
+				ArrayList<String> items = (ArrayList<String>) Arrays.asList(line.split(","));
+				// heat is 15th element
+				System.out.println(items.get(14));
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

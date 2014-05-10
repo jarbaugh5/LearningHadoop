@@ -1,0 +1,23 @@
+package FirstJob;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class MaxHeat {
+	
+	public static void main(String[] args) {
+		BufferedReader br = null;
+		
+		try {
+			String line;
+			br = new BufferedReader(new FileReader("dailysnippet.txt"));
+			while ((line = br.readLine()) != null) {
+				System.out.println(line);
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+}
